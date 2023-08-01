@@ -1,0 +1,18 @@
+/*
+  We try to auto-detect whether the user prefers a light theme or a dark theme:
+
+  + https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+  + Relevant Firefox issue: https://bugzilla.mozilla.org/show_bug.cgi?id=1529323
+  + How to force Firefox dark mode: https://stackoverflow.com/a/56757527/4200092
+
+  As per the above, "light" is assumed as the default if no preference is stated.
+*/
+
+:root {
+  --vos-black: #333333;
+  --vos-white: #FAFAFA;
+  --vos-yellow: #E5BB2E;
+  --vos-purple: #815EE4;
+  --vos-light-yellow: #F7EDC9;
+  --vos-light-purple: #DBCFFF;
+}
