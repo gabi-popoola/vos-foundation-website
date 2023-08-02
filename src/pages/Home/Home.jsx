@@ -8,8 +8,10 @@ import {
 	HeroText,
 } from './HomeStyles';
 import Button from '../../components/subComponents/Button/Button';
+import { useNavigate } from 'react-router';
 
 const Home = () => {
+	const navigate = useNavigate();
 	return (
 		<MainContainer>
 			<HeroBanner>
@@ -21,7 +23,10 @@ const Home = () => {
 						supplies, programs, and activities, we empower individuals to reach
 						their full potential and become active, responsible citizens.
 					</HeroText>
-					<Button text={'Our Mission'} />
+					<Button
+						text={'Our Mission'}
+						handleClick={() => navigate('about-us')}
+					/>
 				</HeroLeftSide>
 				<HeroRightSide>Image</HeroRightSide>
 			</HeroBanner>

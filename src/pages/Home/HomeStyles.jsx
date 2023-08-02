@@ -4,29 +4,32 @@ export const MainContainer = styled.div`
 	min-height: 100vh;
 `;
 export const HeroBanner = styled.div`
-	min-height: 50vh;
+	min-height: 45vh;
 	background-color: var(--vos-yellow);
 	display: flex;
 	justify-content: space-between;
-	padding: 0.5em 1em;
 	@media only screen and (min-width: 992px) {
-		padding: 0 10em;
+		padding-left: 10em;
 	}
 `;
 export const HeroLeftSide = styled.div`
-	width: 100%;
-	margin: auto;
-
+	margin: auto 1em;
 	@media only screen and (min-width: 992px) {
-		width: 50%;
+		width: 55%;
+	}
+`;
+export const HeroRightSide = styled.div`
+	display: none;
+	width: 45%;
+	border: solid 1px red;
+	background-color: grey;
+	@media only screen and (min-width: 992px) {
+		display: block;
 	}
 `;
 export const HeroTitle = styled.h1``;
-export const HeroText = styled.p``;
-export const HeroRightSide = styled.div`
-	display: none;
+export const HeroText = styled.p`
 	@media only screen and (min-width: 992px) {
-		display: block;
-		width: 50%;
+		max-width: 65%;
 	}
 `;
