@@ -32,3 +32,18 @@ export const HeroText = styled.p`
 		max-width: 65%;
 	}
 `;
+export const CoreWorkContainer = styled.div`
+	border: 1px solid red;
+	min-height: 70vh;
+	padding: 0 1em;
+	text-align: center;
+	@media only screen and (min-width: 992px) {
+		padding-top: 3em;
+	}
+`;
+export const CoreWorkSubContainer = styled.div`
+	border: 1px solid red;
+	display: flex;
+	justify-items: space-between;
+`;
+export const CoreWorkTitle = styled.h1``;

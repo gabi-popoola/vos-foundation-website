@@ -6,9 +6,13 @@ import {
 	HeroLeftSide,
 	HeroTitle,
 	HeroText,
+	CoreWorkContainer,
+	CoreWorkTitle,
+	CoreWorkSubContainer,
 } from './HomeStyles';
 import Button from '../../components/subComponents/Button/Button';
 import { useNavigate } from 'react-router';
+import IconCard from '../../components/IconCard/IconCard';
 
 const Home = () => {
 	const navigate = useNavigate();
@@ -30,6 +34,12 @@ const Home = () => {
 				</HeroLeftSide>
 				<HeroRightSide>Image</HeroRightSide>
 			</HeroBanner>
+			<CoreWorkContainer>
+				<CoreWorkTitle>The core of our work involves</CoreWorkTitle>
+				<CoreWorkSubContainer>
+					<IconCard />
+				</CoreWorkSubContainer>
+			</CoreWorkContainer>
 		</MainContainer>
 	);
 };
