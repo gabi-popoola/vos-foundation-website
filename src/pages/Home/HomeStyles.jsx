@@ -21,7 +21,6 @@ export const HeroLeftSide = styled.div`
 export const HeroRightSide = styled.div`
 	display: none;
 	width: 45%;
-	border: solid 1px red;
 	background-color: grey;
 	@media only screen and (min-width: 992px) {
 		display: block;
