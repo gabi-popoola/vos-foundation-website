@@ -42,8 +42,24 @@ export const CoreWorkContainer = styled.div`
 	}
 `;
 export const CoreWorkSubContainer = styled.div`
-	border: 1px solid red;
-	display: flex;
-	justify-items: space-between;
+  border: 1px solid red;
+  min-height: 55vh;
+  display: block;
+  @media only screen and (min-width: 992px) {
+    display: flex;
+    justify-items: space-between;
+  }
 `;
 export const CoreWorkTitle = styled.h1``;
+export const CoreWorkRightSide = styled.div`
+  border: 1px solid red;
+  @media only screen and (min-width: 992px) {
+    width: 50%;
+  }
+`;
+export const CoreWorkLefttSide = styled.div`
+  border: 1px solid red;
+  @media only screen and (min-width: 992px) {
+    width: 50%;
+  }
+`;
