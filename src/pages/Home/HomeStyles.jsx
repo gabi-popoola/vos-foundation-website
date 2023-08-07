@@ -4,11 +4,12 @@ export const MainContainer = styled.div`
   min-height: 100vh;
 `;
 export const HeroBanner = styled.div`
-  min-height: 45vh;
+  min-height: 40vh;
   background-color: var(--vos-yellow);
   display: flex;
   justify-content: space-between;
   @media only screen and (min-width: 992px) {
+    min-height: 30vh;
   }
 `;
 export const HeroLeftSide = styled.div`
@@ -20,11 +21,10 @@ export const HeroLeftSide = styled.div`
 `;
 export const HeroRightSide = styled.div`
   display: none;
-  width: 45vh;
+  width: 50vw;
   background-color: grey;
   @media only screen and (min-width: 992px) {
     display: block;
-    min-height: 50vh;
   }
 `;
 export const HeroTitle = styled.h1`
@@ -32,7 +32,7 @@ export const HeroTitle = styled.h1`
 `;
 export const HeroText = styled.p`
   @media only screen and (min-width: 992px) {
-    max-width: 65vh;
+    max-width: 65vw;
   }
 `;
 export const CoreWorkContainer = styled.div`
@@ -45,7 +45,7 @@ export const CoreWorkContainer = styled.div`
   }
 `;
 export const CoreWorkSubContainer = styled.div`
-  border: 1px solid red;
+  ${'' /* border: 1px solid red; */}
   min-height: 55vh;
   display: block;
   @media only screen and (min-width: 992px) {
@@ -58,13 +58,23 @@ export const CoreWorkRightSide = styled.div`
   border: 1px solid red;
   min-height: 70vh;
   @media only screen and (min-width: 992px) {
-    width: 50vh;
+    width: 50vw;
   }
 `;
-export const CoreWorkLefttSide = styled.div`
+export const CoreWorkSubTitle = styled.h2`
+  ${'' /* border: 1px solid red; */}
+  text-align: left;
+  margin-left: 1em;
+  cursor: pointer;
+  &:hover,
+  &.active {
+    text-decoration: underline var(--vos-yellow) solid 5px;
+  }
+`;
+export const CoreWorkLeftSide = styled.div`
   border: 1px solid red;
   min-height: 55vh;
   @media only screen and (min-width: 992px) {
-    width: 50vh;
+    width: 50vw;
   }
 `;

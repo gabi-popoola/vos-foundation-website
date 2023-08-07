@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   HeroBanner,
   HeroRightSide,
@@ -10,7 +10,8 @@ import {
   CoreWorkTitle,
   CoreWorkSubContainer,
   CoreWorkRightSide,
-  CoreWorkLefttSide,
+  CoreWorkLeftSide,
+  CoreWorkSubTitle,
 } from './HomeStyles';
 import Button from '../../components/subComponents/Button/Button';
 import { useNavigate } from 'react-router';
@@ -19,6 +20,11 @@ import { HomeContants } from '../../utils/constants';
 
 const Home = () => {
   const navigate = useNavigate();
+  const [active, setActive] = useState({ value: 1, text: HomeContants('coreSubText1') });
+
+  const handleCoreSubtitleClick = ({ val, t }) => {
+    setActive({ value: val, text: t });
+  };
   return (
     <MainContainer>
       <HeroBanner>
@@ -32,10 +38,29 @@ const Home = () => {
       <CoreWorkContainer>
         <CoreWorkTitle>{HomeContants('coreWorkTitle')}</CoreWorkTitle>
         <CoreWorkSubContainer>
-          <CoreWorkRightSide>Right side</CoreWorkRightSide>
-          <CoreWorkLefttSide>
-            <IconCard />
-          </CoreWorkLefttSide>
+          <CoreWorkRightSide>
+            <CoreWorkSubTitle
+              className={active.value === 1 && 'active'}
+              onClick={() => handleCoreSubtitleClick({ value: 1, t: HomeContants('coreSubText1') })}
+            >
+              {HomeContants('coreSubtitle1')}
+            </CoreWorkSubTitle>
+            <CoreWorkSubTitle
+              className={active.value === 2 && 'active'}
+              onClick={() => handleCoreSubtitleClick({ value: 3, t: HomeContants('coreSubText2') })}
+            >
+              {HomeContants('coreSubtitle2')}
+            </CoreWorkSubTitle>
+            <CoreWorkSubTitle
+              className={active.value === 3 && 'active'}
+              onClick={() => handleCoreSubtitleClick({ value: 3, t: HomeContants('coreSubText3') })}
+            >
+              {HomeContants('coreSubtitle3')}
+            </CoreWorkSubTitle>
+          </CoreWorkRightSide>
+          <CoreWorkLeftSide>
+            <IconCard text={active.text} />
+          </CoreWorkLeftSide>
         </CoreWorkSubContainer>
       </CoreWorkContainer>
     </MainContainer>
