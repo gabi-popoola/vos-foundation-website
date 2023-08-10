@@ -1,11 +1,11 @@
 import React from 'react';
-import { CardText, CardIcon, MainContainer } from './IconCardStyles';
+import { CardText, CardIcon, MainContainer, CardTitle } from './IconCardStyles';
 
-const IconCard = ({ text, icon }) => {
+const IconCard = ({ title, text, icon, alt }) => {
   return (
     <MainContainer>
-      IconCard
-      <CardIcon src={icon} />
+      <CardTitle>{title}</CardTitle>
+      <CardIcon src={icon} alt={alt} />
       <CardText>{text}</CardText>
     </MainContainer>
   );

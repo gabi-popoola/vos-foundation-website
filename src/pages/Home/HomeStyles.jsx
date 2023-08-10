@@ -9,72 +9,49 @@ export const HeroBanner = styled.div`
   display: flex;
   justify-content: space-between;
   @media only screen and (min-width: 992px) {
-    min-height: 30vh;
+    min-height: 50vh;
   }
 `;
 export const HeroLeftSide = styled.div`
-  margin: auto 1em;
-  padding: 1.5em 0;
+  margin: 1.5em 1em;
   @media only screen and (min-width: 992px) {
-    padding: 1.5em;
+		margin: auto;
+		margin-left: 11em;
+		margin-right: 1em;
   }
 `;
 export const HeroRightSide = styled.div`
   display: none;
-  width: 50vw;
+  width: 45vw;
   background-color: grey;
   @media only screen and (min-width: 992px) {
     display: block;
   }
 `;
-export const HeroTitle = styled.h1`
-  margin-top: 0;
-`;
+export const HeroTitle = styled.h1``;
 export const HeroText = styled.p`
+    margin-bottom: 1.5em;
   @media only screen and (min-width: 992px) {
-    max-width: 65vw;
+    max-width: 40vw;
   }
 `;
 export const CoreWorkContainer = styled.div`
-  border: 1px solid red;
-  min-height: 70vh;
-  padding: 0 1em;
+  min-height: 65vh;
   text-align: center;
   @media only screen and (min-width: 992px) {
-    padding-top: 3em;
+		padding: 0 15em;
+		margin-top: 4em;
   }
+`;
+export const CoreWorkTitle = styled.h1`
+	margin: 1.5em 0;
+	@media only screen and (min-width: 992px) {
+	}
 `;
 export const CoreWorkSubContainer = styled.div`
-  ${'' /* border: 1px solid red; */}
-  min-height: 55vh;
-  display: block;
-  @media only screen and (min-width: 992px) {
-    display: flex;
-    justify-items: space-between;
-  }
-`;
-export const CoreWorkTitle = styled.h1``;
-export const CoreWorkRightSide = styled.div`
-  border: 1px solid red;
-  min-height: 70vh;
-  @media only screen and (min-width: 992px) {
-    width: 50vw;
-  }
-`;
-export const CoreWorkSubTitle = styled.h2`
-  ${'' /* border: 1px solid red; */}
-  text-align: left;
-  margin-left: 1em;
-  cursor: pointer;
-  &:hover,
-  &.active {
-    text-decoration: underline var(--vos-yellow) solid 5px;
-  }
-`;
-export const CoreWorkLeftSide = styled.div`
-  border: 1px solid red;
   min-height: 55vh;
   @media only screen and (min-width: 992px) {
-    width: 50vw;
-  }
+		display: flex;
+		justify-content: space-around;
+	}
 `;
