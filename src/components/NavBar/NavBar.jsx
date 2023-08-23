@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconContainer, MainContainer, NavContainer, NavItem } from './NavBarStyles';
+import { IconContainer, MainContainer, NavContainer, NavItem } from './NavBar.styles';
 import { useNavigate } from 'react-router';
 import Button from '../subComponents/Button/Button';
 

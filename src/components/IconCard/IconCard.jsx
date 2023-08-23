@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardText, CardIcon, MainContainer, CardTitle } from './IconCardStyles';
+import { CardText, CardIcon, MainContainer, CardTitle } from './IconCard.styles';
 
 const IconCard = ({ title, text, icon, alt }) => {
   return (

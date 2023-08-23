@@ -9,7 +9,7 @@ import {
   CoreWorkContainer,
   CoreWorkTitle,
   CoreWorkSubContainer,
-} from './HomeStyles';
+} from './Home.styles';
 import Button from '../../components/subComponents/Button/Button';
 import { useNavigate } from 'react-router';
 import IconCard from '../../components/IconCard/IconCard';
